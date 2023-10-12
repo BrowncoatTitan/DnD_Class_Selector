@@ -20,7 +20,7 @@ namespace D_D_Class_Selector
                 return conn;
             });
 
-            builder.Services.AddTransient<IClassRepository, ClassRepository>();
+            builder.Services.AddTransient<IClassesRepository, ClassesRepository>();
 
             var app = builder.Build();
 

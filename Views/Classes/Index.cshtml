@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Product>
+﻿@model IEnumerable<Classes>
 
 <h2>Classes</h2>
 <table class="table">
@@ -8,12 +8,12 @@
         <th>Role</th>
     </tr>
 
-    @foreach (var class in @Model)
+    @foreach (var classes in @Model)
     {
         <tr>
-            <td>@Classes.ClassID</td>
-            <td>@Classes.Name</td>
-            <td>@Classes.Role</td>           
+            <td>@classes.ClassID</td>
+            <td>@classes.Name</td>
+            <td>@classes.Role</td>           
         </tr>
     }
 
