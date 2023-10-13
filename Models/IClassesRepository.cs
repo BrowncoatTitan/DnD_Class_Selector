@@ -3,6 +3,8 @@
     public interface IClassesRepository
     {
         public IEnumerable<Classes> GetAllClasses();
-        public IEnumerable<Classes> GetClasses(int id);
+        public Classes GetClass(int id);
+        public void UpdateClass (Classes classes);
+        public void InsertClass(Classes classToInsert);
     }
 }

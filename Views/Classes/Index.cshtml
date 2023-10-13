@@ -11,7 +11,7 @@
     @foreach (var classes in @Model)
     {
         <tr>
-            <td>@classes.ClassID</td>
+            <td><a href=/Classes/ViewClass/@classes.ClassID>@classes.ClassID</td>
             <td>@classes.Name</td>
             <td>@classes.Role</td>           
         </tr>

@@ -1,15 +1,19 @@
-﻿@model Product
+﻿@model Classes
 
 <h3>@Model.Name Information</h3>
 
 <table class="table">
     <tr>
-        <th>Product ID</th>
+        <th>ClassID</th>
         <th>Name</th>
-        <th>Price</th>
+        <th>Role</th>
     </tr>
     <tr>
-        <td>@Model.ProductID</td>
+        <td>@Model.ClassID</td>
         <td>@Model.Name</td>
-        <td>@Model.Price</td>   
+        <td>@Model.Role</td>   
     </tr>
+
+    <div style="display: block">
+    <a href="/Classes/UpdateClass/@Model.ClassID">Update this Class</a>
+</div>

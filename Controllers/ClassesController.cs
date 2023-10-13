@@ -20,8 +20,28 @@ namespace D_D_Class_Selector.Controllers
         }
         public IActionResult ViewClass(int id)
         {
-            var classes = repo.GetClasses(id);
+            var classes = repo.GetClass(id);
             return View(classes);
+        }
+        public IActionResult UpdateClass(int id)
+        {
+             Classes classes = repo.GetClass(id);
+            if (classes == null)
+            {
+                return View("ClassNotFound");
+            }
+            return View(classes);
+        }
+        public IActionResult UpdateClassToDatabase(Classes classes)
+        {
+            repo.UpdateClass(classes);
+
+            return RedirectToAction("ViewProduct", new { id = classes.ClassID });
+        }
+        public IActionResult InsertClassToDatabase(Classes classToInsert)
+        {
+            repo.InsertClass(classToInsert);
+            return RedirectToAction("Index");
         }
     }
 }

@@ -15,12 +15,23 @@ namespace D_D_Class_Selector.Models
         }
         public IEnumerable<Classes> GetAllClasses()
         {
-            return _conn.Query<Classes>("SELECT * FROM classes"); 
+            return _conn.Query<Classes>("SELECT * FROM classes");
         }
-        public Classes GetClasses(int id)
+
+        public Classes GetClass(int id)
         {
-            return _conn.QuerySingle<Classes>("SELECT * FROM classes WHERE ClassID = @id", new { id = id });
+            return _conn.QuerySingle<Classes>("SELECT * FROM classes WHERE ClassID = @ClassID", new { ClassID = id });
         }
-        
+
+        public void UpdateClass(Classes classes)
+        {
+            _conn.Execute("UPDATE classes SET Name = @name, Role = @rp;e WHERE ClassID = @id",
+        new { name = classes.Name, role = classes.Role, id = classes.ClassID });
+        }
+        public void InsertClass(Classes classToInsert)
+        {
+            _conn.Execute("INSERT INTO classes (NAME, ROLE) VALUES (@name, @role);",
+                new { name = classToInsert.Name, role = classToInsert.Role});
+        }
     }
 }
