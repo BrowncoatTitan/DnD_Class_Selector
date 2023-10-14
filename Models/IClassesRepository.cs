@@ -6,5 +6,6 @@
         public Classes GetClass(int id);
         public void UpdateClass (Classes classes);
         public void InsertClass(Classes classToInsert);
+        public void DeleteClass (Classes classes);
     }
 }

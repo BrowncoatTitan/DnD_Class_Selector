@@ -33,5 +33,10 @@ namespace D_D_Class_Selector.Models
             _conn.Execute("INSERT INTO classes (NAME, ROLE) VALUES (@name, @role);",
                 new { name = classToInsert.Name, role = classToInsert.Role});
         }
+
+        public void DeleteClass(Classes classes)
+        {
+            _conn.Execute("DELETE FROM classes WHERE ClassID = @id;", new { id = classes.ClassID });
+        }
     }
 }

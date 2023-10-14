@@ -38,9 +38,19 @@ namespace D_D_Class_Selector.Controllers
 
             return RedirectToAction("ViewProduct", new { id = classes.ClassID });
         }
+        public IActionResult InsertClass() 
+        {
+            var classes = new Classes();
+            return View(classes); 
+        }
         public IActionResult InsertClassToDatabase(Classes classToInsert)
         {
             repo.InsertClass(classToInsert);
+            return RedirectToAction("Index");
+        }
+        public IActionResult DeleteClass(Classes classes)
+        {
+            repo.DeleteClass(classes);
             return RedirectToAction("Index");
         }
     }
