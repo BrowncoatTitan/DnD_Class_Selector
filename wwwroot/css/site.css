@@ -14,5 +14,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    background-image: url('/Content/background1.jpg');
+    background-size: cover;
+    margin-bottom: 60px;
 }
