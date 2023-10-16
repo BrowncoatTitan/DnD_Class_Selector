@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TMCG\\Desktop\\Repos\\DnD Class Selector\\D&D Class Selector.csproj": {}
+    "C:\\Users\\TMCG\\Desktop\\Repos\\DnD_Class_Selector\\D&D Class Selector.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TMCG\\Desktop\\Repos\\DnD Class Selector\\D&D Class Selector.csproj": {
+    "C:\\Users\\TMCG\\Desktop\\Repos\\DnD_Class_Selector\\D&D Class Selector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TMCG\\Desktop\\Repos\\DnD Class Selector\\D&D Class Selector.csproj",
+        "projectUniqueName": "C:\\Users\\TMCG\\Desktop\\Repos\\DnD_Class_Selector\\D&D Class Selector.csproj",
         "projectName": "D&D Class Selector",
-        "projectPath": "C:\\Users\\TMCG\\Desktop\\Repos\\DnD Class Selector\\D&D Class Selector.csproj",
+        "projectPath": "C:\\Users\\TMCG\\Desktop\\Repos\\DnD_Class_Selector\\D&D Class Selector.csproj",
         "packagesPath": "C:\\Users\\TMCG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TMCG\\Desktop\\Repos\\DnD Class Selector\\obj\\",
+        "outputPath": "C:\\Users\\TMCG\\Desktop\\Repos\\DnD_Class_Selector\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TMCG\\AppData\\Roaming\\NuGet\\NuGet.Config",

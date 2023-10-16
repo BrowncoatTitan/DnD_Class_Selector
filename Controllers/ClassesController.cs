@@ -36,7 +36,7 @@ namespace D_D_Class_Selector.Controllers
         {
             repo.UpdateClass(classes);
 
-            return RedirectToAction("ViewProduct", new { id = classes.ClassID });
+            return RedirectToAction("ViewProduct", new { id = classes.ID });
         }
         public IActionResult InsertClass() 
         {

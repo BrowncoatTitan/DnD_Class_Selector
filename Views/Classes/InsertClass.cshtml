@@ -4,9 +4,9 @@
 
 @using (Html.BeginForm("InsertClassToDatabase", "Classes", "Post"))
 {
-    <input asp-for="ClassID" type="hidden" value="" />
+    <input asp-for="ID" type="hidden" value="" />
 
-    <label asp-for="ClassID" class="control-label">ClassID</label>
+    <label asp-for="ID" class="control-label">ClassID</label>
     <input type="text" name="ClassID" class="form-control" value="" />
 
     <label asp-for="Name" class="control-label">Name</label>

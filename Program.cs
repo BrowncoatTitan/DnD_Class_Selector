@@ -15,7 +15,7 @@ namespace D_D_Class_Selector
 
             builder.Services.AddScoped<IDbConnection>((s) =>
             {
-                IDbConnection conn = new MySqlConnection(builder.Configuration.GetConnectionString("class_selector"));
+                IDbConnection conn = new MySqlConnection(builder.Configuration.GetConnectionString("DefaultConnection"));
                 conn.Open();
                 return conn;
             });

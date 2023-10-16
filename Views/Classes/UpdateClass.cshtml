@@ -4,7 +4,7 @@
 
 @using (Html.BeginForm("UpdateClassToDatabase", "Class", "Post"))
 {
-    <input asp-for="ClassID" type="hidden" value="@Model.ClassID" />
+    <input asp-for="ID" type="hidden" value="@Model.ID" />
 
     <label asp-for="Name" class="control-label">Name</label>
     <input type="text" name="Name" class="form-control" value="@Model.Name" />

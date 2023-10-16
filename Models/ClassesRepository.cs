@@ -20,13 +20,13 @@ namespace D_D_Class_Selector.Models
 
         public Classes GetClass(int id)
         {
-            return _conn.QuerySingle<Classes>("SELECT * FROM classes WHERE ClassID = @ClassID", new { ClassID = id });
+            return _conn.QuerySingle<Classes>("SELECT * FROM classes WHERE ID = @id", new { id = id });
         }
 
         public void UpdateClass(Classes classes)
         {
-            _conn.Execute("UPDATE classes SET Name = @name, Role = @rp;e WHERE ClassID = @id",
-        new { name = classes.Name, role = classes.Role, id = classes.ClassID });
+            _conn.Execute("UPDATE classes SET Name = @name, Role = @role WHERE ID = @id",
+        new { name = classes.Name, role = classes.Role, id = classes.ID });
         }
         public void InsertClass(Classes classToInsert)
         {
@@ -36,7 +36,7 @@ namespace D_D_Class_Selector.Models
 
         public void DeleteClass(Classes classes)
         {
-            _conn.Execute("DELETE FROM classes WHERE ClassID = @id;", new { id = classes.ClassID });
+            _conn.Execute("DELETE FROM classes WHERE ID = @id;", new { id = classes.ID });
         }
     }
 }

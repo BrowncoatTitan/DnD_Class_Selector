@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q3Am0pT8CDu/PTtGzd8lfSvB+Ogb2L+wpUazVMrW5FeEr2+hTJg4LpzP2UDnZjwT5t2sNpt/85I5smvoK7bbTQ==",
+  "dgSpecHash": "g6aM83fh+GaAEwkP3homqhAHG0tZkulpXnBArzPaVrvxWSLxvSmNoOUuGYXL08N5Q04rrwhEMZbZlk9gIfS0ew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TMCG\\Desktop\\Repos\\DnD Class Selector\\D&D Class Selector.csproj",
+  "projectFilePath": "C:\\Users\\TMCG\\Desktop\\Repos\\DnD_Class_Selector\\D&D Class Selector.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TMCG\\.nuget\\packages\\dapper\\2.1.4\\dapper.2.1.4.nupkg.sha512",
     "C:\\Users\\TMCG\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
