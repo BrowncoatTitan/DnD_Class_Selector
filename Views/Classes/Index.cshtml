@@ -1,24 +1,29 @@
 ﻿@model IEnumerable<Classes>
 
+
 <h2>Classes</h2>
+
 
 <div style="display: block">
     <a href="/Classes/InsertClass/">Create a New Class</a>
 </div>
 
-<table class="table">
+<table class="table table-striped table-hover">
     <tr>
-        <th>ClassID</th>
-        <th>Name</th>
-        <th>Role</th>
+        <th style ="color: aliceblue;">
+            ClassID</th>
+        <th style="color: aliceblue;">Name </th>
+        <th style="color: aliceblue;">Role</th>
+        <th style="color: aliceblue;">Magic</th>
     </tr>
 
     @foreach (var classes in @Model)
     {
         <tr>
-            <td><a href=/Classes/ViewClass/@classes.ID>@classes.ID</td>
-            <td>@classes.Name</td>
-            <td>@classes.Role</td>           
+            <td style="color: aliceblue;"><a href=/Classes/ViewClass/@classes.ID>@classes.ID</td>
+            <td style="color: aliceblue;"><a href=/Classes/ViewClass/@classes.ID>@classes.Name</td>
+            <td style="color: aliceblue;">@classes.Role</td>
+            <td style="color: aliceblue;">@classes.Magic</td>
         </tr>
     }
 

@@ -25,13 +25,13 @@ namespace D_D_Class_Selector.Models
 
         public void UpdateClass(Classes classes)
         {
-            _conn.Execute("UPDATE classes SET Name = @name, Role = @role WHERE ID = @id",
-        new { name = classes.Name, role = classes.Role, id = classes.ID });
+            _conn.Execute("UPDATE classes SET Name = @name, Role = @role, Magic = @magic WHERE ID = @id",
+        new { name = classes.Name, role = classes.Role, magic = classes.Magic, id = classes.ID });
         }
         public void InsertClass(Classes classToInsert)
         {
-            _conn.Execute("INSERT INTO classes (NAME, ROLE) VALUES (@name, @role);",
-                new { name = classToInsert.Name, role = classToInsert.Role});
+            _conn.Execute("INSERT INTO classes (NAME, ROLE, MAGIC) VALUES (@name, @role);",
+                new { name = classToInsert.Name, role = classToInsert.Role, magic = classToInsert.Magic });
         }
 
         public void DeleteClass(Classes classes)
