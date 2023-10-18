@@ -20,8 +20,8 @@
     @foreach (var classes in @Model)
     {
         <tr>
-            <td style="color: aliceblue;"><a href=/Classes/ViewClass/@classes.ID>@classes.ID</td>
-            <td style="color: aliceblue;"><a href=/Classes/ViewClass/@classes.ID>@classes.Name</td>
+            <td><a class="color-container" href=/Classes/ViewClass/@classes.ID>@classes.ID</td>
+            <td><a class="color-container" href=/Classes/ViewClass/@classes.ID>@classes.Name</td>
             <td style="color: aliceblue;">@classes.Role</td>
             <td style="color: aliceblue;">@classes.Magic</td>
         </tr>
