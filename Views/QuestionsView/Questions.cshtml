@@ -1,0 +1,18 @@
+﻿@model List<QuestionModel>
+
+<form action="/Questionnaire/Submit" method="post">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <div>
+            @Html.DisplayFor(model => Model[i].Text)
+            @for (int j = 1; j <= 5; j++)
+            {
+                <label>
+                    @Html.RadioButtonFor(model => Model[i].Response, j)
+                    @j
+                </label>
+            }
+        </div>
+    }
+    <input type="submit" value="Submit">
+</form>

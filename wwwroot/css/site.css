@@ -21,8 +21,9 @@ body {
     margin-bottom: 60px;
     background-image: url('/Content/dragons.jpg');
     background-size: cover;
-    color:aliceblue;
+    color: aliceblue;
     font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .background-containter {
@@ -40,4 +41,13 @@ body {
 }
 .magic-color-contianer {
     color: hsl(354, 100%, 71&);
+}
+.navbar-brand{
+    color: red;
+}
+p {
+    font-size: 20px;
+}
+.add-bold{
+    font-weight:bold;
 }
