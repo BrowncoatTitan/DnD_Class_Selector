@@ -32,6 +32,12 @@ body {
     width: 100vw;
 }
 
-.color-container{
-    color: aliceblue;
+.link-color-container{
+    color: hsl(182, 80%, 66%);
+}
+.navbar{
+    background-color: black;
+}
+.magic-color-contianer {
+    color: hsl(354, 100%, 71&);
 }
