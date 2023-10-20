@@ -1,7 +1,7 @@
 ﻿@model Classes
 
+<div style="background-color: #9e829c70; padding: 32px">
 <h3>@Model.Name Information</h3>
-
 <table class="table table-striped table-hover">
     <tr>
         <th style="color: aliceblue;">ClassID</th>
@@ -17,7 +17,7 @@
     </tr>
 
     <div style="display: block">
-    <a href="/Classes/UpdateClass/@Model.ID">Update this Class</a>
+    <a class="btn btn-primary" style="margin-bottom:10px" href="/Classes/UpdateClass/@Model.ID">Update Class</a>
 </div>
 
     <div style="display: block">
@@ -25,6 +25,7 @@
         @using (Html.BeginForm("DeleteClass", "Classes", "Post"))
         {
             <input type="hidden" asp-for="ID" value="@Model.ID" />
-            <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this class" />
+            <button class=" btn btn-danger" type="submit" onclick="return confirm('Are you sure?')" value="Delete this class">Delete Class</button>
         }
     </div>
+</div>
